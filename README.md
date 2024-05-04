@@ -1,5 +1,5 @@
 
-# C is a High Level ESP32 module
+# C is High Level ESP32 module
 
 
 Little project using ESP32 microcontroller, with a Light sensor
