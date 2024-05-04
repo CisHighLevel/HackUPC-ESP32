@@ -8,6 +8,7 @@ Little project using ESP32 microcontroller, with a Light sensor
 ## Tech Stack
 
 - Arduino
+- Python
 
 
 
@@ -27,3 +28,4 @@ Little project using ESP32 microcontroller, with a Light sensor
 ## Acknowledgements
 
  - [zvonler](https://github.com/zvonler/DebouncedLDR/blob/master/examples/SerialLDRTester/SerialLDRTester.ino)
+ - [vietnguyen20139](https://github.com/vietnguyen20139/TT_Iot.github.io)
