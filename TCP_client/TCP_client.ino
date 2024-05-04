@@ -1,10 +1,6 @@
+
+#include "config.h" // Incluye el archivo config.h que acabamos de crear
 #include <WiFi.h>
-
-const char* ssid = "HACKUPC2024B";
-const char* password = "Biene2024!";
-
-#define ServerPort 1999
-#define ServerIP "10.192.230.83"
 
 WiFiClient TcpClient;
 
@@ -43,15 +39,15 @@ void loop() {
       if (msg == "close") {
         TcpClient.stop();
         Serial.println("Client disconnected");
-        while (true) {} // Infinite loop to stop further execution
+        while (true) {
+        } // Infinite loop to stop further execution
       }
 
       msg += "$"; // Add terminator character
       TcpClient.print(msg);
       Serial.println("Message sent");
     }
-  }
-  else {
+  } else {
     Serial.println("Connection lost. Reconnecting...");
     TcpClient.connect(ServerIP, ServerPort);
   }
