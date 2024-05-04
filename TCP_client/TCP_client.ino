@@ -2,6 +2,15 @@
 #include "config.h" // Incluye el archivo config.h que acabamos de crear
 #include <WiFi.h>
 
+<<<<<<< Updated upstream
+=======
+const char* ssid = "HACKUPC2024B";
+const char* password = "Biene2024!";
+
+#define ServerPort 1999
+#define ServerIP "192.168.72.52"
+
+>>>>>>> Stashed changes
 WiFiClient TcpClient;
 
 void setup() {
