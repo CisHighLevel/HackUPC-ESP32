@@ -2,10 +2,10 @@
 #include <HTTPClient.h>
 // #include <DebouncedLDR.h>
 
-// const char* ssid = "HACKUPC2024B";
-// const char* password = "Biene2024!";
-const char* ssid = "pau";
-const char* password = "pau12345";
+const char* ssid = "HACKUPC2024B";
+const char* password = "Biene2024!";
+// const char* ssid = "pau";
+// const char* password = "pau12345";
 const int LDR_PIN = 34;
 // DebouncedLDR ldr(1023, 9, 100);
 
@@ -39,7 +39,7 @@ void loop() {
   if (WiFi.status() == WL_CONNECTED) {
     HTTPClient http;
 
-    String serverAddress = "http://192.168.72.18:5000/data/create";
+    String serverAddress = "http://10.192.230.83:5000/light/create";
     http.begin(serverAddress);
     
     // Leer el valor del sensor
